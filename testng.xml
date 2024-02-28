@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+ <listeners>
+        <listener class-name="your.package.RetryAnalyzer"/>
+    </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Utilities.listener"/>
+      <class name="Reporting.ExtentReport"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
