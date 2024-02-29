@@ -119,6 +119,8 @@ private static Logger logger=LogManager.getLogger(ManageAppointmentBlocks.class)
 	    logger.info("+endtime3");
 	    manage.navigateToselectmultipleappointmenttypes();
 	    logger.info("+selectmultipleappointmenttypes");
+	    
+	    
 	
 	    
 	    

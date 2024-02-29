@@ -40,7 +40,7 @@ public class AppointmentManagingBlocks1 {
     private WebElement appoinmentscheduling;
     @FindBy(xpath="//*[@id=\"appointmentschedulingui-scheduleProviders-app\"]")
     private WebElement scheduleProvider;
-    @FindBy(xpath="//*[@id=\"calendar\"]/div/div/table/tbody/tr[1]/td[1]/div")
+    @FindBy(xpath="//*[@id=\"calendar\"]/div/div/table/tbody/tr[1]/td[5]/div/div[2]/div")
     private WebElement calendar;
     @FindBy(xpath="//*[@id=\"select-provider\"]/input")
     private WebElement selectprovider;
@@ -172,7 +172,7 @@ public class AppointmentManagingBlocks1 {
     	 		
     	 		 // public void navigateToappointmentblockformbuttons() {
     	 			  
-    	 			 appointmentblockformbuttons.click();
+    	 			 //appointmentblockformbuttons.click();
     	 			 Actions act1 = new Actions(driver);
 
     	    	 		act1.moveToElement(driver.findElement(By.xpath("//*[@id=\"appointment-block-form-buttons\"]/button[2]"))).click();

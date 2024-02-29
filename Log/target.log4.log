@@ -1,7 +1,16 @@
-12:14:38.693 [main] INFO  - +login page
-12:14:38.750 [main] INFO  - +username
-12:14:39.834 [main] INFO  - +password
-12:14:39.879 [main] INFO  - +selectLocator
-12:14:43.387 [main] INFO  - +loginbutton
-12:14:44.811 [main] INFO  - +AppoinmentScheduling
-12:14:47.596 [main] INFO  - +AppoinmentScheduleProvider
+15:44:55.164 [main] INFO  - +login page
+15:44:55.214 [main] INFO  - +username
+15:44:56.302 [main] INFO  - +password
+15:44:56.340 [main] INFO  - +selectLocator
+15:44:59.882 [main] INFO  - +loginbutton
+15:45:01.633 [main] INFO  - +AppoinmentScheduling
+15:45:04.464 [main] INFO  - +AppoinmentScheduleProvider
+15:45:06.503 [main] INFO  - +calender
+15:45:08.605 [main] INFO  - +selectprovider
+15:45:10.698 [main] INFO  - +starttime1
+15:45:10.727 [main] INFO  - +starttime2
+15:45:10.753 [main] INFO  - +starttime3
+15:45:10.795 [main] INFO  - +endtime1
+15:45:10.834 [main] INFO  - +endtime2
+15:45:10.873 [main] INFO  - +endtime3
+15:45:11.083 [main] INFO  - +selectmultipleappointmenttypes
