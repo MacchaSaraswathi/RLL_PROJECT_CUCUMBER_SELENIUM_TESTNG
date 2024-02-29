@@ -10,10 +10,13 @@ import java.util.Iterator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -45,6 +48,7 @@ private static Logger logger=LogManager.getLogger(ManageAppointmentBlocks.class)
 	   driver = new ChromeDriver();
 	   driver.manage().window().maximize();
 	   manage=new AppointmentManagingBlocks1(driver);
+	   
 	   
 	   
 	  
@@ -115,11 +119,17 @@ private static Logger logger=LogManager.getLogger(ManageAppointmentBlocks.class)
 	    logger.info("+endtime3");
 	    manage.navigateToselectmultipleappointmenttypes();
 	    logger.info("+selectmultipleappointmenttypes");
+	
+	    
 	    
 	    takeScreenShot("selectmultipleappointmenttypes.png");
 	    
-	    driver.close();
+	   driver.close();
+    	 
+	   
 	}
+	
+	
 	    
 	    
 	    @DataProvider(name = "loginData")
@@ -155,6 +165,7 @@ private static Logger logger=LogManager.getLogger(ManageAppointmentBlocks.class)
 				e.printStackTrace();
 			}	
 		}
+	    
 
 }
 

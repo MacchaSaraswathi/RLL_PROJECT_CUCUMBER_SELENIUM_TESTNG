@@ -2,6 +2,7 @@ package POMPages;
 
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 
@@ -57,6 +59,8 @@ public class AppointmentManagingBlocks1 {
     
     @FindBy(xpath="//*[@id=\"appointment-block-form\"]/selectmultipleappointmenttypes/div/div[1]/div[2]/a")
     private WebElement selectmultipleappointmenttypes;
+    @FindBy(xpath="//*[@id=\"appointment-block-form-buttons\"]/button[2]")
+    private WebElement appointmentblockformbuttons;
   
     
     
@@ -149,21 +153,61 @@ public class AppointmentManagingBlocks1 {
        	
     }
      public void navigateToselectmultipleappointmenttypes() {
-    	 selectmultipleappointmenttypes.click();
+    	 //selectmultipleappointmenttypes.click();
     	 
-    	 
+    	 Actions act = new Actions(driver);
+
+    	 		act.moveToElement(driver.findElement(By.id("createAppointmentBlock")))
+
+    	 		.click()
+
+    	 		.sendKeys("obs")
+
+    	 		.sendKeys(Keys.ENTER)
+
+    	 		.build()
+
+    	 		.perform();	
+    	 		
+    	 		
+    	 		 // public void navigateToappointmentblockformbuttons() {
+    	 			  
+    	 			 appointmentblockformbuttons.click();
+    	 			 Actions act1 = new Actions(driver);
+
+    	    	 		act1.moveToElement(driver.findElement(By.xpath("//*[@id=\"appointment-block-form-buttons\"]/button[2]"))).click();
+
+    	    	 		
+    	 	    	 
+    	 	    	 
+    	 	       	 
+    	 	       	
+    	 	    }
+    	 		
+    	 		
+    	 		
+      
+    	 		
+    	 	 	 
     	 
        	 
        	
     }
+     
+
+   
+    	
+    	 
+       	 
+       	
+    
      
    
     	 
     	 
        	 
        	
-    }
-     
+    
    
     
     
